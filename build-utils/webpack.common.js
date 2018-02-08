@@ -41,6 +41,10 @@ const config = {
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'JQuery': 'jquery'
+    }),
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       title: 'Course Tracker',
