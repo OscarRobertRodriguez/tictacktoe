@@ -15,6 +15,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  background: $primary;
 }
 
 .page-wrapper {
@@ -22,6 +23,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   align-items: center;
+  
 }
 
 .page-main {
@@ -31,6 +33,7 @@ body {
   display: flex;
   width: 100%;
   max-width: 980px;
+  align-items: center;
 }
 
 .page-header,

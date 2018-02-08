@@ -2,4 +2,9 @@
 @import 'base/colors'; 
 // layout
 @import 'layout/layout'; 
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/page-main';
 //components
+@import 'components/restartBtn';
+@import 'components/tickTackToe'; 

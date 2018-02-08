@@ -1,0 +1,9 @@
+
+
+.page-footer small {
+  color: RGBA(244, 185, 228, 1);
+  font-size: 1.1rem;
+  &::after {
+    content: '\'s',
+  }
+}
