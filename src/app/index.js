@@ -5,7 +5,13 @@ import 'jquery';
 // import html for html-loader
 import '../index.html';
 
+// import scripts
+import './scripts/introModal';
 
 
-console.log($('h1').text()); 
+import x from '../assets/images/x@2x.png'; 
+import o from '../assets/images/o@2x.png';
+
+
+
 
