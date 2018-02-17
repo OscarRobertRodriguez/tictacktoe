@@ -1,6 +1,6 @@
 @import 'base/normalize';
 @import 'base/colors'; 
-@import 'base/animations'; 
+
 // layout
 @import 'layout/layout'; 
 @import 'layout/header';
@@ -10,3 +10,6 @@
 @import 'components/restartBtn';
 @import 'components/tickTackToe'; 
 @import 'components/modal-intro';
+
+//animations
+@import 'base/animations';

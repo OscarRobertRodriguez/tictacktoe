@@ -11,4 +11,15 @@
   letter-spacing: 1px;
   font-weight: 300;
   text-align: center;
+  margin-top: 1rem;
+}
+
+.display-winner {
+ font-size: 3rem;
+ font-family: sans-serif;
+ font-weight: 500;
+ color: $highlight;
+ margin-top: 0;
+ margin-bottom: 4rem;
+ height: 30px;
 }
