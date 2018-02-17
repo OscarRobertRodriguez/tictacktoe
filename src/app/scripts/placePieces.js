@@ -1,15 +1,13 @@
 import xImage from '../../assets/images/x@2x.png';
 import oImage from '../../assets/images/o@2x.png';
 
-import {
-  rotateImg,
-  flipImg
-} from './animations';
+import { rotateImg,flipImg } from './animations';
 import gameSetup from './gameSetup';
-import {
-  checkForWinner
-} from './checkForWinner';
+import {checkForWinner} from './checkForWinner';
+import pop from '../../assets/audio/pop.wav'; 
 
+let popSound = new Audio(); 
+popSound.src = pop; 
 
 const $square = $('.tick-tack-toe__square');
 const $imgSquare = $square.find('img:not([src])');
@@ -26,7 +24,7 @@ function placePlayer1() {
   let $zone = $(this);
   let player1 = gameObject.player1GamePiece === 'x' ? xImage : oImage;
   let $img = $zone.find('img');
-  console.log(player1);
+  popSound.play();
 
 
   $img.attr('src', player1);
