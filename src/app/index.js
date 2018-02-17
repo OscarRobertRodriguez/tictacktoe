@@ -12,7 +12,7 @@ import '../index.html';
 
 
 // store game pieces
-import gameSetup from  './scripts/gameSetup'; 
+import {gameSetup} from  './scripts/gameSetup'; 
 // script for piece placement on click
 import  './scripts/placePieces'; 
 import './scripts/restart'; 

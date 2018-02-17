@@ -2,7 +2,7 @@ import xImage from '../../assets/images/x@2x.png';
 import oImage from '../../assets/images/o@2x.png';
 
 import { rotateImg,flipImg } from './animations';
-import gameSetup from './gameSetup';
+import {gameSetup} from './gameSetup';
 import {checkForWinner} from './checkForWinner';
 import pop from '../../assets/audio/pop.wav'; 
 

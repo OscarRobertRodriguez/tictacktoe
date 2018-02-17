@@ -59,7 +59,7 @@ function closeModal() {
 
 
 
-module.exports = {
+export let gameSetup = {
   setPieces: setPieces,
   getInfo: gameInfo,
 };
