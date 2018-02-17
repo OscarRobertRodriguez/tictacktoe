@@ -2,6 +2,7 @@ const commonPaths = require("./common-paths");
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; 
 
 const config = {
   entry: './src/app/index.js',
@@ -37,6 +38,15 @@ const config = {
       {
         test: /\.html$/,
         use: ['html-loader?attrs=img:src video:poster']
+      },
+      {
+        test: /\.(ogg|mp3|wav|mpe?g)$/i,
+        use:[{
+          loader: 'file-loader',
+          options: {
+            name: 'assets/audio/[name]'
+          }
+        }]
       }
     ]
   },
@@ -47,12 +57,13 @@ const config = {
     }),
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Course Tracker',
+      title: 'tic-tak-toe',
       template: commonPaths.indexPath
     }),
     new CleanWebpackPlugin(['dist'], {
       root: commonPaths.root
-    })
+    }),
+    new BundleAnalyzerPlugin()
   ]
 };
 
