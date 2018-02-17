@@ -39,6 +39,12 @@
  align-items: center;
  font-size: 4rem;
  perspective: 500px;
+ cursor: pointer;
+ transition: background 50ms ease;
+
+ &:hover {
+   background: rgba(0,0,0,.2);
+ }
 }
 
 @media (min-width: 2500px) {
