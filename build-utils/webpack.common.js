@@ -2,7 +2,7 @@ const commonPaths = require("./common-paths");
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; 
+
 
 const config = {
   entry: './src/app/index.js',
@@ -63,7 +63,7 @@ const config = {
     new CleanWebpackPlugin(['dist'], {
       root: commonPaths.root
     }),
-    new BundleAnalyzerPlugin()
+   
   ]
 };
 

@@ -1,5 +1,5 @@
 const commonPaths = require("./common-paths");
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; 
 
 const config = {
   devtool: "source-map",
@@ -31,6 +31,9 @@ const config = {
     }
     ]
   },
+  plugins: [
+    new BundleAnalyzerPlugin()
+  ],
   devServer: {
     inline: true,
     hot: true,
