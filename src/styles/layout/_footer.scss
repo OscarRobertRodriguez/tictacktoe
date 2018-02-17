@@ -1,8 +1,12 @@
 
+.page-footer {
+ height: 100px;
+}
 
 .page-footer small {
   color: RGBA(244, 185, 228, 1);
   font-size: 1.1rem;
+  padding: 5px;
   &::after {
     content: '\'s',
   }

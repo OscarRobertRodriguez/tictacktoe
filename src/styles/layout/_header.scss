@@ -1,6 +1,6 @@
 
 .page-header {
-  margin-top: 1rem;
+  height: 200px;
 }
 
 .page-header__title {
@@ -11,7 +11,7 @@
   letter-spacing: 1px;
   font-weight: 300;
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .display-winner {
@@ -20,6 +20,18 @@
  font-weight: 500;
  color: $highlight;
  margin-top: 0;
- margin-bottom: 4rem;
+ margin-bottom: 2rem;
  height: 30px;
 }
+
+@media (max-width: 600px) {
+  .page-header__title {
+    font-size: 2rem;
+    padding: 0 5px;
+  }
+
+  .display-winner {
+    font-size: 2rem;
+  }
+}
+  
