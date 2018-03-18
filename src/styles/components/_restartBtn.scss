@@ -23,3 +23,32 @@
     border: none;
   }
 }
+
+
+.large-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 200px;
+  cursor: pointer;
+  height: 200px;
+  padding: 0;
+  color: RGBA(244, 185, 228, 1);
+  border: 5px solid #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: $primary;
+  font-variant: small-caps;
+  font-size: 4rem;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+  outline: none;
+  transition: background .5s ease; 
+  &:hover {
+    background: $secondary; 
+  }
+  &:active {
+    background: $secondary;
+  }
+}
