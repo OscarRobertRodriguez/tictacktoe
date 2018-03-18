@@ -47,7 +47,6 @@ $square.one('click', turnClick);
 
 function turnClick(square) {
   // set player game pieces and imgs
-  console.log(square.target.id + ' i am in tureClick');
   musicBg.play();
   musicBg.loop = true;
   let player1Img = gameSetup.getInfo.player1GamePiece === 'x' ? xImage : oImage;
@@ -77,7 +76,6 @@ function turnClick(square) {
 function turn(squareId, player, img) {
   origBoard[squareId] = player;
   let $piece = $(`#${squareId}`).find('img');
-  console.log($piece, " i am piece");
 
   $piece.attr('src', img);
   if (player === 'x') {
@@ -88,7 +86,6 @@ function turn(squareId, player, img) {
 
   let gameWon = checkWin(origBoard, player);
   if (gameWon) {
-    console.log('you won');
     gameOver(gameWon);
   }
   checkTie(gameWon);
@@ -142,7 +139,6 @@ function bestSpot() {
 function checkTie(status) {
   let $display = $('.display-winner');
   let array = $.makeArray($imgSquare);
-  console.log(status, ' im game won');
   
   if (emptySquares().length == 0 && status === null) {
 
