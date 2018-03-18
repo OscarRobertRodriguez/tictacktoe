@@ -22,7 +22,7 @@ let gameInfo = {
 
 $modalPiece.on('click', closeModal);
 $modalPiece.on('mouseover', function () {  buzz.play(); });
-$modalPiece.mouseleave(function() {buzz.pause();});
+$modalPiece.on( 'mouseleave', function() {buzz.pause();});
 $modalDiffButtons.click(function () { startGame.play();});
 
 
