@@ -6,19 +6,17 @@ import 'jquery';
 import '../index.html';
 
 
-// import x from '../assets/images/x@2x.png';
-// import o from '../assets/images/o@2x.png';
 
 
 
 // store game pieces
 import {gameSetup} from  './scripts/gameSetup'; 
-// script for piece placement on click
-import  './scripts/placePieces'; 
 import './scripts/restart'; 
+import './scripts/game-logic';
 
+// function to set game pieces and difficulty vaules in an object
 $('.modal-img').on('click', gameSetup.setPieces); 
-
+$('.difficulty-btn').on('click', gameSetup.setDifficulty); 
 
 
 
